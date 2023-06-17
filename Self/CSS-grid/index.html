@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8"/>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr; /*"fr means fraction this means that the display will be having 2 equal fractions*/
+                grid-template-rows: 100px 200px 200px; /* specifications for the rows , alternatively we can also use fr here*/
+                gap: 30px;
+            }
+            .initial{
+                grid-column: span 2; /* it will be having width of two columns */
+            }
+            .card{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"><!-- contains the entire grid system--> 
+            <div class="initial card"></div> <!--this element is having 2 class one is intial and second is card so, one element can have to classes seperated with " " space-->            
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </body>
+</html>
